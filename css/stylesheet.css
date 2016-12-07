@@ -11,6 +11,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     
+    
 }
 body { 
     background-color: #222;
@@ -190,41 +191,6 @@ nav{
     font-size: 1.2em;
 }
 
-
-#hero:hover .slider-controls {
-    opacity: 1;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-.slider-controls li a {
-    position: absolute;
-    z-index: 10;
-    top: 40%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-}
-.next {
-    background: url("../img/next.png");
-    margin-right: 70px;
-    right: 0;
-    opacity: 0.3;
-}
-.prev {
-    background: url("../img/prev.png");
-    margin-left: 70px;
-    left: 0;
-    opacity: 0.3;
-}
-.next:hover, .prev:hover {
-    opacity: 1;
-}
-/* ==========================================================================
-   Dividers
-   ========================================================================== */
-
 .section-header {
     text-align: center;
 }
@@ -274,6 +240,10 @@ nav{
 .modal-backdrop {
    background-color: rgb(20, 20, 20);
 }
+
+.modal-header{
+    padding:10px;
+}
 .modal-primar {
    background-color: rgb(34, 34, 34);
 }
@@ -305,6 +275,9 @@ nav{
 }
 input, .input-lg, button {
     border-radius: 0;
+}
+input, .input-lg {
+    height:10%;
 }
 
 
@@ -375,7 +348,7 @@ input, .input-lg, button {
     color:#e40066;  
     font-weight: bold;
 }
-}
+
 
 .left {
     float: left;
@@ -439,7 +412,7 @@ input, .input-lg, button {
 	padding: 3px 10px 2px;
 }
 /* Modal box Styles */
-.close-modal{width:10%;margin-top:15px;}
+.close-modal{width:10%;margin-top:5px;}
 
 .heading-modal{width:80%;margin-top:10px;}
 
