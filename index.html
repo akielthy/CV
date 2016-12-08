@@ -40,7 +40,6 @@
 						<li><a href="#experience-section">Experience <span class="sr-only">Experience</span></a></li>
 						<li><a href="#projects-section">Projects <span class="sr-only">Projects</span></a></li>
 						<li><a href="#skills-section">Skills <span class="sr-only">Skills</span></a></li>
-						<li><a href="#contact-section">Contact <span class="sr-only">Contact</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -53,7 +52,7 @@
 					<header>
 						<h1>Adam Kielthy </h1>
 						<br/>
-						<img src="images/placeholder.jpg" class="img-circle" alt="Cinque Terre" width="150" height="150"> 
+						<img src="images/picture.jpg" class="img-circle" width="150" height="150"> 
 						<br/>
 						<p>Software Developer </p>
 					</header>
@@ -98,7 +97,7 @@
 						<ul>
 							<li>A cinema ticket booking application.</li>
 							<li>A skype notification bot for use with Jenkins CI.</li>
-							<li>data processing engine using Apache Flink.</li>
+							<li>Data processing engine using Apache Flink.</li>
 						</ul>
 						</p>
 					</div>
@@ -411,19 +410,19 @@
 				<div class="row" id="projectsRow">
 					<header class="section-header">
 						<h2 class="section-title"><span>Projects</span></h2>
-						<p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
+						<p class="section-subtitle">Previous projects i've worked on. </p>
 					</header>
 					<div class="col-md-3">
-						<img src="images/cinema1.jpg" alt="..." class="img-rounded">
+						<img src="images/cinema1.jpg" data-toggle="modal" href="#cinema" alt="..." class="img-rounded">
 					</div>
 					<div class="col-md-3">
-						<img src="images/placeholder.jpg" alt="..." class="img-rounded">
+						<img src="images/skype.png" data-toggle="modal" href="#skype" alt="..." class="img-rounded">
 					</div>
 					<div class="col-md-3">
-						<img src="images/placeholder.jpg" alt="..." class="img-rounded">
+						<img src="images/flink.jpg" data-toggle="modal" href="#flink" alt="..." class="img-rounded">
 					</div>
 					<div class="col-md-3">
-						<img src="images/placeholder.jpg" alt="..." class="img-rounded">
+						<img src="images/bootstrap.png" data-toggle="modal" href="#bootstrap" alt="..." class="img-rounded">
 					</div>
 				</div>
 			</div>
@@ -487,6 +486,238 @@
 	</body>
 </html>
 <!--Modal Box's-->
+
+
+
+
+
+
+<div id="cinema" class="modal fade in">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a class="btn close-modal" data-dismiss="modal"><span class="fa fa-window-close fa-3x"></span></a>
+				<h4 class="heading-modal">Cinema Ticket Booking Systen</h4>
+			</div>
+			<div class="modal-body">
+				<section>
+				<div class="row">
+				<header class="centered">
+                    
+                    <img src="images/cinema.jpg" class="img" style="margin: auto; display:block; border-radius:15px" width="150" height="150"> 
+
+                </header></div>
+					<div class="row" style="margin: auto; display:block;">
+						<p>A cinema ticket booking application, which allowed users to:</p>
+						<ul>
+						<li>Register & logon</li>
+						<li>Add/Remove Movies</li>
+						<li>Batch Import Movie details from a file</li>
+						<li>Add/Remove Showing times</li>
+						<li>View ticket sales</li>
+						<li>Book & cancel tickets</li>
+						</ul>
+				</div>
+					
+				</section>
+			</div>
+			<div class="modal-footer">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="skype" class="modal fade in">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a class="btn close-modal" data-dismiss="modal"><span class="fa fa-window-close fa-3x"></span></a>
+				<h4 class="heading-modal">Cinema Ticket Booking Systen</h4>
+			</div>
+			<div class="modal-body">
+				<section>
+				<div class="row">
+				<header class="centered">
+                    
+                    <img src="images/skype.png" class="img" style="margin: auto; display:block; border-radius:15px" width="150" height="150"> 
+
+                </header></div>
+					<div class="row" style="margin: auto; display:block;">
+						<p>A Skype Notification bot for Integration with Jenkins:</p>
+						<ul>
+						<li>Sends Skype messages on build failure</li>
+						<li>Names user who "broke the build"</li>
+						<li>includes log data & subversion info in messages</li>
+						<li>Can send messages to a single user or to groups</li>
+						</ul>
+				</div>
+					
+				</section>
+			</div>
+			<div class="modal-footer">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="flink" class="modal fade in">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a class="btn close-modal" data-dismiss="modal"><span class="fa fa-window-close fa-3x"></span></a>
+				<h4 class="heading-modal">Apache Flink Data Processing Engine</h4>
+			</div>
+			<div class="modal-body">
+				<section>
+				<div class="row">
+				<header class="centered">
+                    
+                    <img src="images/flink.jpg" class="img" style="margin: auto; display:block; border-radius:15px" width="150" height="150"> 
+
+                </header></div>
+					<div class="row" style="margin: auto; display:block;">
+						<p>A Data processing Engine build using Apache Flink</p>
+						<ul>
+						<li>Takes Real Time Data Streams</li>
+						<li>Performs arbritrary tasks on these such as Aggregation, filtration, enrichment etc.</li>
+						<li>Allows flows to be custom build and deployed</li>
+						<li>Scalable Application</li>
+						<li>Allows for realtime data processing</li>
+						</ul>
+				</div>
+					
+				</section>
+			</div>
+			<div class="modal-footer">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="bootstrap" class="modal fade in">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<a class="btn close-modal" data-dismiss="modal"><span class="fa fa-window-close fa-3x"></span></a>
+				<h4 class="heading-modal">Responsive Portfolio using Bootstrap 3</h4>
+			</div>
+			<div class="modal-body">
+				<section>
+				<div class="row">
+				<header class="centered">
+                    
+                    <img src="images/bootstrap.png" class="img" style="margin: auto; display:block; border-radius:15px" width="150" height="150"> 
+
+                </header></div>
+					<div class="row" style="margin: auto; display:block;">
+						<p>A responsive portfolio website showcasing my professional and educational achievements:</p>
+						<ul>
+						<li>Bootstrap 3</li>
+						<li>JQuery</li>
+						<li>HTML 5</li>
+						<li>Responsive design</li>
+						</ul>
+				</div>
+					
+				</section>
+			</div>
+			<div class="modal-footer">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--Software Modal box-->
 <div id="software" class="modal fade in">
 	<div class="modal-dialog">
