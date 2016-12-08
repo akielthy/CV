@@ -1,11 +1,14 @@
 /*
     Vendor prefixes are included along side non-prefixed values where appropriate.
     Only Google Chrome and Firefox are supported.
+    
+    e.g:
     -webkit-background-size: cover;   -- Style for Google Chrome
     -moz-background-size: cover;      -- Style for FireFox
     background-size:cover;
 
 */
+
 * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -45,28 +48,18 @@ h1, h2, h3, h4{
     font-weight: bold;
 }
 
-/* ==========================================================================
-   Navigation
-   ========================================================================== */
-
 nav{
     width: 100%;
     display: block;
     margin-top: 0;
-    
-/*    float:left;*/
 }
 .navbar-default {
     /*
     Possible colours
-    zbackground: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.7);
     background-color: rgb(34, 34, 34);
     background-color: rgb(221, 221, 221);
-    
-    color: #777;
     */
-    
-    
     background-color: rgb(34, 34, 34);
     border: none;
     text-transform: uppercase;
@@ -81,11 +74,10 @@ nav{
     margin: 0 auto;
     padding: 0;
     list-style: none;
-        float:none;
+    float:none;
     display: inline-block;
     font-size: 1em;
     font-weight: bold;
-    
 }
  }
 
@@ -97,7 +89,7 @@ nav{
     display: inline-block;
     font-size: 1em;
     font-weight: bold;
-  float:right;
+    float:right;
 }
  }
 
@@ -108,9 +100,7 @@ nav{
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     background: none;
     color:#e40066;}
-/* ==========================================================================
-  Layout 
-   ========================================================================== */
+
 
 #hero {
     width: 100%!;
@@ -121,8 +111,10 @@ nav{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;    
-/*    background-image: url(../images/code3.png);*/
-    background-color: rgba(51, 51, 51, 0.1);
+
+/*    background-image:url(https://static.pexels.com/photos/75121/notes-coffee-learn-work-75121.jpeg);*/
+/*    background-image:url(https://static.pexels.com/photos/45/coffee-apple-iphone-desk.jpg);*/
+    background-image:url(../images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: black 0.2em 0.2em 0.2em;
@@ -164,8 +156,7 @@ nav{
 }
 #skills-section {
     padding: 65px 0;
-   /*   background: #f7f7f7  */
-        background: rgb(34, 34, 34);
+    background: rgb(34, 34, 34);
     text-align: center;
 }
 #education-section {
@@ -178,19 +169,13 @@ nav{
     /*   background: #f7f7f7  */
     background: rgb(34, 34, 34);
 }
-#education{
-    right: 0px;
-}
 #projects-section {
     padding: 65px 0;
     background: rgb(221, 221, 221);
 }
 #contact-section {
-    padding: 40px 0;
+    padding: 15px 0;
     background: rgb(221, 221, 221);
-}
-#page-contact .contact-info p {
-    font-size: 1.2em;
 }
 
 .section-header {
@@ -206,38 +191,13 @@ nav{
     text-align: center;
     color: rgba(85, 85, 85, 0.99);
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 40px 0;
 }
-.spacer {
-    width: 100px;
-    height: 2px;
-    margin: auto;
-}
+
 .section-subtitle {
     text-align: center;
     padding: 30px 0;
 }
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-
-@media only screen and (max-device-width: 480px) { 
-    .form-control {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    border: none;
-} }
-@media only screen and (min-device-width: 481px) { 
-.form-control {
-    width: 47%;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    border: none;
-} 
-.btn-block {
-    display: block;
-    width: 47%;
-}}
 
 .modal-backdrop {
    background-color: rgb(20, 20, 20);
@@ -250,6 +210,7 @@ nav{
    background-color: rgb(34, 34, 34);
 }
 .btn.btn-default {
+    border-radius: 24px;
     margin: 40px auto 0;
     background: transparent;
     position: relative;
@@ -261,7 +222,7 @@ nav{
     padding: 12px 26px 12px;
     cursor: pointer;
     border: 2px solid #4cddf3;
-    border-radius: 0;
+/*    border-radius: 0;*/
     letter-spacing: 2px;
     pointer-events: auto;
     border-color: rgb(221, 221, 221);
@@ -275,27 +236,25 @@ nav{
 /*    color: fff;*/
     background: transparent;
 }
+/*
 input, .input-lg, button {
     border-radius: 0;
 }
 input, .input-lg {
     height:10%;
 }
+*/
 
 
 
-/* ==========================================================================
-   Social icons
-   ========================================================================== */
-
-.social-icons .btn {
+.social-links .btn {
     margin-right: 15px;
 }
-.social-icons {
+.social-links {
     padding-top: 10px;
     margin-bottom: 35px;
 }
-.social-icons .btn.btn-clear {
+.social-links .btn.btn-clear {
     border: 1px solid rgb(221, 221, 221);
 }
 .btn-round {
@@ -308,6 +267,7 @@ input, .input-lg {
 .btn-round i {
     font-size: 20px;
     top: 15px;
+    padding-bottom: 2px;
     position: relative;
 }
 .btn.btn-clear {
@@ -337,10 +297,10 @@ input, .input-lg {
 }
 
 .btn-linkedin:hover {
-    color: #015786;
+    color: #0077B5;
 }
 .btn-mail:hover {
-    color: #CA2128;
+    color: #4169E1;
 }
 
 .btn-github:hover{
@@ -351,41 +311,7 @@ input, .input-lg {
     font-weight: bold;
 }
 
-
-.left {
-    float: left;
-}
-.right {
-    float: right;
-}
-.text-center {
-    text-align: center;
-}
-.centered {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-}
-
-
-
-
-
-
-
-.btn-contact:hover{
-    border-color: rgb(221, 221, 221);
-    border-color: rgb(221, 221, 221);
-    color:#e40066;
-/*    color: fff;*/
-/*    background: transparent;*/
-
-        
-
-}
-/*                                  */
-
-
+/*Skills progress bars*/
 .progress {
     position: relative;
 	height: 25px;
@@ -427,13 +353,13 @@ input, .input-lg {
 /*  bottom: 0;*/
   width: 100%;
   height: 100px;
-  background-color: rgb(34, 34, 34);
+  background-color: black;
   text-align: center;
 }
 
 .footer .container{
   margin-top: 20px;
-  color: rgb(34, 34, 34);
+  color: black;
   width: 100%;
 }
 
@@ -529,6 +455,7 @@ input, .input-lg {
     }
 
 .img-rounded:hover {
+    
 	cursor: pointer;
 	-webkit-transform: scale(1.4, 1.4);
     transform: scale(1.4, 1.4);
@@ -540,9 +467,7 @@ input, .input-lg {
 
 #thumbnails{
 /*    padding-left: 200px;*/
-
-                display: inline-block;
-
+    display: inline-block;
 }
 
 
@@ -555,20 +480,24 @@ input, .input-lg {
 .centred{
     
  
-                    display: inline-block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin: 5px;
 
 }
 
-.btn-con{
-    background-color: aqua;
-}
 .carousel-inner{
-    width:1200px;
+    width:100%;
     height:400px;
-    background-color: #16a085;
+background-color:rgb(34, 34, 34);
+}
+
+
+.about-section{
+    background-color: rgb(67, 67, 67);
+    display: block;
+    height:400px;
 }
 
 
