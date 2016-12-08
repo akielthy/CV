@@ -508,6 +508,7 @@ input, .input-lg {
 .projectsRow {
     margin: 80px 0px 80px 0px;
     padding-left: 100px;
+
     }
 
 .img-rounded {
@@ -519,6 +520,10 @@ input, .input-lg {
     -webkit-transition-duration: 0.3s; /* Safari */
     height: 140px;
     width: 140px;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
     }
 
 .img-rounded:hover {
@@ -532,10 +537,28 @@ input, .input-lg {
     }
 
 #thumbnails{
-    padding-left: 200px
+/*    padding-left: 200px;*/
+
+                display: inline-block;
+
 }
 
 
+#projectsRow img{
+                    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+}
+.centred{
+    
+ 
+                    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5px;
+
+}
 
 
 
