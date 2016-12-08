@@ -5,11 +5,13 @@
 		<!--		<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
 		<title>Adam Kielthy Web Resume</title>
 		<meta name="description" content="Web CA for IMD CA 2">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Necesssary for bootstrap responsiveness-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> <!--Necesssary for bootstrap responsiveness-->
 		<meta name="author" content="Adam Kielthy">
 		<!-- Imports for bootstrap, font-awesome, jquery and local stylesheets -->
+        		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/stylesheet.css">
 		<link rel="stylesheet" href="css/font-awesome.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,7 +25,7 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Links</span>
-<i class="fa fa-bars fa-1.5x" aria-hidden="true"></i>
+                        <i class="fa fa-bars fa-1.5x" aria-hidden="true"></i>
 
 					</button>
 				</div>
@@ -46,7 +48,7 @@
 			<div class="container">
 				<div class="row">
 					<br/><br/>
-					<header class="centered">
+					<header>
 						<h1>Adam Kielthy </h1>
 						<br/>
 						<img src="images/placeholder.jpg" class="img-circle" alt="Cinque Terre" width="150" height="150"> 
@@ -57,11 +59,11 @@
 						<a href="https://twitter.com/Adamkielthy" class="btn btn-round btn-clear btn-twitter"><i class="fa fa-twitter"></i></a>
 						<a href="https://www.facebook.com/Adamkielthy" class="btn btn-round btn-clear btn-facebook"><i class="fa fa-facebook"></i></a>
 						<a href="https://ie.linkedin.com/in/adam-kielthy-598a6783" class="btn btn-round btn-clear btn-linkedin"><i class="fa fa-linkedin-square"></i></a>
-						<a href="https://www.github.com" class="btn btn-round btn-clear btn-github"><i class="fa fa-github"></i></a>
+						<a href="https://www.github.com/akielthy" class="btn btn-round btn-clear btn-github"><i class="fa fa-github"></i></a>
 						<a href="mailto:ack2905@hotmail.com?Subject=Job%20Offer" class="btn btn-round btn-clear btn-mail"><i class="fa fa-envelope"></i></a>
 					</div>
 					<a href="files/adam-kielthy-cv.pdf"  class="btn btn-default download" download>Download CV</a><!--<br/>-->
-					<a data-toggle="modal" href="#Contact"  class="btn btn-default download" download>Contact Me</a>
+					<a data-toggle="modal" href="#Contact"  class="btn btn-default">Contact Me</a>
 				</div>
 			</div>
 		</section>
@@ -75,8 +77,7 @@
 				</header>
 				<div class="row">
 					<div class="col-md-3">
-						<div class="profile"><img src="images/placeholder.jpg" alt="profile" />
-						</div>
+						
 					</div>
 					<div class="col-md-9">
 						<!--                        
@@ -85,12 +86,19 @@
 							work as part of a team, seeking 
 							graduate
 							position. -->
-						<p></p>
-						<p>.</p>
-						<p>Facer libris qui ea, mel ludus persius suscipiantur te. Eos soleat inimicus liberavisse at. Ex sit mazim soluta lobortis, ut nec bonorum splendide, mel tation erroribus principes eu. Cum ne vero albucius disputando. Et vidit movet sea. Falli appetere ut vix, eu offendit sapientem est. Postulant delicatissimi ex mea, ne modo nostrud salutandi usu, cu ignota dissentiunt his.</p>
-						<p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum. Cum at eius reformidans. In vocent dolores eos, ea vel idque soluta similique.</p>
-						<p>No wisi hendrerit per, ius ei stet oportere scribentur. Nam ex quando petentium, ei sea sonet timeam. Ex erat docendi urbanitas vix, equidem appetere vix an, mei legere offendit ponderum te. In per vidit dicta democritum, ut fuisset voluptua repudiandae eum.</p>
-					</div>
+<p>I'm Adam, a final year Institute of Technology Tallaght student studying for an honours Bsc in Computing.<br/>
+I aim to graduate in 2017 and will be pursuing graduate opportunities.<br/>
+I am proficient in several programming languages, most notably Java, C# and C++.<br/>
+I fit in well with any team and always strive to perform to the maximum of my ability.</p>
+<br/>
+<p>I have worked on various projects both individually and in groups as part of my course,<br/>
+and also in the workplace. These were Java and bash based projects including:
+<ul>
+<li>A cinema ticket booking application.</li>
+<li>A skype notification bot for use with Jenkins CI.</li>
+<li>data processing engine using Apache Flink.</li>
+    </ul></p>
+                    </div>
 				</div>
 			</div>
 		</section>
@@ -302,10 +310,10 @@
 		<!----------- Footer ----------->
 		<div class="footer">
 			<div class="container">
-				<a href='#'><i class="fa fa-github fa-3x fa-fw"></i></a>
-				<a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-				<a href='#'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
-				<a href='#'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
+				<a href='https://www.github.com/akielthy'><i class="fa fa-github fa-3x fa-fw"></i></a>
+				<a href='https://www.facebook.com/adam.kielthy'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
+				<a href='https://www.twitter.com/ADAM_ITTSMC'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
+				<a href='https://www.linkedin.com/in/adam-kielthy-598a6783'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
 				<span>
 					<h3><a href="about.html">About This Page</a> </h3>
 				</span>
@@ -315,7 +323,6 @@
 <!-- Less critical imports to load after content.-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/scripts.js"></script>
-		<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 	</body>
 </html>
 
