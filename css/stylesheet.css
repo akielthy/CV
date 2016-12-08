@@ -121,10 +121,12 @@ nav{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;    
-    background-image: url(../images/code3.png);
+/*    background-image: url(../images/code3.png);*/
+    background-color: rgba(51, 51, 51, 0.1);
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: black 0.2em 0.2em 0.2em;
+/*    background: linear-gradient(rgba(51, 51, 51, 0.1), rgba(51, 51, 51, 0.1));*/
     
 }
 #hero header {
@@ -558,6 +560,15 @@ input, .input-lg {
     margin-right: auto;
     margin: 5px;
 
+}
+
+.btn-con{
+    background-color: aqua;
+}
+.carousel-inner{
+    width:1200px;
+    height:400px;
+    background-color: #16a085;
 }
 
 
